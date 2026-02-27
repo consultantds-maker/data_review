@@ -54,9 +54,15 @@ indicators = {
         "chart_desc": "This indicator captures reported crimes against children, including abuse, exploitation, and neglect. Increases may signal growing pressure on child protection systems and heightened vulnerability during periods of displacement, livelihood loss, or social instability."
 
     },
+    "Cybercrime Cases": {
+        "column": "cy_val",
+        "chart_title": "Trend of Reported Cybercrime Cases",
+        "chart_desc": "This indicator reflects reported cybercrime cases, including online fraud and digital recruitment scams. Rising trends may indicate expanding digital exploitation risks, especially when displaced or economically distressed populations are targeted through online platforms."
+
+    },
     "Kidnapping Cases": {
         "column": "kidnapping_val",
-        "chart_title": "Trend of Reported Cybercrime Cases",
+        "chart_title": "Trend of Reported Kidnapping Cases",
         "chart_desc": "This indicator tracks reported kidnapping cases. Higher levels may point to serious security stress and increased vulnerability to coercion, trafficking, or organised exploitation networks."
 
     },
@@ -106,4 +112,5 @@ else:
 
     st.plotly_chart(fig, use_container_width=True)
     st.write(metric["chart_desc"])
+
 
